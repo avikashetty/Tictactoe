@@ -1,18 +1,22 @@
-Tic-Tac-Toe Game
+# **Tic-Tac-Toe Game**
 A simple text-based Tic-Tac-Toe game implemented in Python. This project basically highlights features such as loops, conditions, functions, and modularity that are basic in programming with the extra touch of a graphical user interface to show a true representation of the game, which can be played by two players at a go.
+
 ________________________________________
-Features
+## **Features **
 Interactive Gameplay: Two players turn by turn place their marks ‘X’ or ‘O’ on a 3x3 board or a 3x3 cardboard having nine compartments.
 Input Validation: Eases the possibilities of a player to choose only genuine and unoccupied cell.
 Win/Tie Detection: Identifies win condition such as rows, columns or diagonals, or draws when all the areas of the board are filled.
 Error Handling: Retrieves and reports invalid inputs within the app without causing system fail and gives appropriate error messages.
-Clean and Modular Code: It is important for functions to be optimized, so that reading through the code is not a tedious cumbersome task.________________________________________
-How to Play
+Clean and Modular Code: It is important for functions to be optimized, so that reading through the code is not a tedious cumbersome task.
+
+________________________________________
+## **How to Play**
 1.	Run the program in your Python environment.
 2.	The game will display a 3x3 grid representing the board.
 3.	Players take turns entering a number (1-9) corresponding to the desired cell:
 o	1 is the top-left cell, 9 is the bottom-right cell.
 4.	The game will announce the winner or declare a tie when all cells are filled.
+   
 ________________________________________
 Game Controls
 Number	Cell Position
@@ -36,10 +40,12 @@ git clone https://github.com/your-username/tic-tac-toe.git
 cd tic-tac-toe
 3.	Run the program:
 python tictactoe.py
+
 ________________________________________
 Project Structure
 •	tictactoe.py: The main Python file containing the game logic and functionality.
 •	README.md: Documentation for the project, including setup instructions and gameplay details.
+
 ________________________________________
 Code Highlights
 1.	Game Board Initialization:
@@ -67,16 +73,19 @@ def get_player_input(board, player):
                 print("Invalid move. Try again.")
         except ValueError:
             print("Please enter a valid number.")
+  	
 ________________________________________
 Future Improvements
 •	AI Opponent: Implement a computer player with strategic moves using the minimax algorithm.
 •	Graphical Interface: Build a GUI version of the game using Tkinter or PyGame.
 •	Online Multiplayer: Add networking capabilities to allow players to compete remotely.
 ________________________________________
+
 Acknowledgements
 •	Python documentation for its excellent resources.
 •	Various online tutorials and guides that provided inspiration and best practices.
 ________________________________________
+
 License
 This project is open-source and available under the MIT License.
 
