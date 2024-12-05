@@ -37,9 +37,9 @@ ________________________________________
 •	Python 3.x installed on your system.
 **Steps**
 1.	Clone the repository:
-git clone https://github.com/your-username/tic-tac-toe.git
+git clone [https://github.com/avikashetty/Tictactoe]
 2.	Navigate to the project directory:
-cd tic-tac-toe
+cd Tictactoe
 3.	Run the program:
 python tictactoe.py
 
