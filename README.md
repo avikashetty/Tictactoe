@@ -52,6 +52,7 @@ ________________________________________
 # **Code Highlights**
 **1.	Game Board Initialization:**
 board = [[" " for _ in range(3)] for _ in range(3)]
+
 **2.	Win Detection:**
 def check_winner(board, player):
     for row in board:
@@ -63,6 +64,7 @@ def check_winner(board, player):
     if all(board[i][i] == player for i in range(3)) or all(board[i][2 - i] == player for i in range(3)):
         return True
     return False
+    
 **3.	Player Input Validation:**
 def get_player_input(board, player):
     while True:
@@ -79,12 +81,15 @@ def get_player_input(board, player):
 ________________________________________
 # **Future Improvements**
 •	AI Opponent: Implement a computer player with strategic moves using the minimax algorithm.
+
 •	Graphical Interface: Build a GUI version of the game using Tkinter or PyGame.
+
 •	Online Multiplayer: Add networking capabilities to allow players to compete remotely.
 ________________________________________
 
 # **Acknowledgements**
 •	Python documentation for its excellent resources.
+
 •	Various online tutorials and guides that provided inspiration and best practices.
 ________________________________________
 
