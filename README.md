@@ -46,6 +46,7 @@ python tictactoe.py
 ________________________________________
 # **Project Structure**
 •	tictactoe.py: The main Python file containing the game logic and functionality.
+
 •	README.md: Documentation for the project, including setup instructions and gameplay details.
 
 ________________________________________
