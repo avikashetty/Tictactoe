@@ -55,27 +55,46 @@ board = [[" " for _ in range(3)] for _ in range(3)]
 
 **2.	Win Detection:**
 def check_winner(board, player):
+
     for row in board:
+    
         if all(cell == player for cell in row):
+        
             return True
+            
     for col in range(3):
+    
         if all(board[row][col] == player for row in range(3)):
+        
             return True
+            
     if all(board[i][i] == player for i in range(3)) or all(board[i][2 - i] == player for i in range(3)):
+    
         return True
+        
     return False
     
 **3.	Player Input Validation:**
 def get_player_input(board, player):
+
     while True:
+    
         try:
+        
             move = int(input(f"Player {player}, enter your move (1-9): ")) - 1
+            
             row, col = divmod(move, 3)
+            
             if 0 <= move <= 8 and board[row][col] == " ":
+            
                 return row, col
+                
             else:
+            
                 print("Invalid move. Try again.")
+                
         except ValueError:
+        
             print("Please enter a valid number.")
   	
 ________________________________________
