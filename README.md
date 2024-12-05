@@ -2,7 +2,7 @@
 A simple text-based Tic-Tac-Toe game implemented in Python. This project basically highlights features such as loops, conditions, functions, and modularity that are basic in programming with the extra touch of a graphical user interface to show a true representation of the game, which can be played by two players at a go.
 
 ________________________________________
-## **Features **
+## **Features**
 Interactive Gameplay: Two players turn by turn place their marks ‘X’ or ‘O’ on a 3x3 board or a 3x3 cardboard having nine compartments.
 Input Validation: Eases the possibilities of a player to choose only genuine and unoccupied cell.
 Win/Tie Detection: Identifies win condition such as rows, columns or diagonals, or draws when all the areas of the board are filled.
@@ -18,22 +18,24 @@ o	1 is the top-left cell, 9 is the bottom-right cell.
 4.	The game will announce the winner or declare a tie when all cells are filled.
    
 ________________________________________
-Game Controls
-Number	Cell Position
-1	Top-Left
-2	Top-Middle
-3	Top-Right
-4	Middle-Left
-5	Center
-6	Middle-Right
-7	Bottom-Left
-8	Bottom-Middle
-9	Bottom-Right
+# **Game Controls**
+| Number | Cell Position   |
+|--------|-----------------|
+| 1      | Top-Left        |
+| 2      | Top-Middle      |
+| 3      | Top-Right       |
+| 4      | Middle-Left     |
+| 5      | Center          |
+| 6      | Middle-Right    |
+| 7      | Bottom-Left     |
+| 8      | Bottom-Middle   |
+| 9      | Bottom-Right    |
+
 ________________________________________
-How to Run
-Prerequisites
+# **How to Run**
+**Prerequisites**
 •	Python 3.x installed on your system.
-Steps
+**Steps**
 1.	Clone the repository:
 git clone https://github.com/your-username/tic-tac-toe.git
 2.	Navigate to the project directory:
@@ -42,15 +44,15 @@ cd tic-tac-toe
 python tictactoe.py
 
 ________________________________________
-Project Structure
+# **Project Structure**
 •	tictactoe.py: The main Python file containing the game logic and functionality.
 •	README.md: Documentation for the project, including setup instructions and gameplay details.
 
 ________________________________________
-Code Highlights
-1.	Game Board Initialization:
+# **Code Highlights**
+**1.	Game Board Initialization:**
 board = [[" " for _ in range(3)] for _ in range(3)]
-2.	Win Detection:
+**2.	Win Detection:**
 def check_winner(board, player):
     for row in board:
         if all(cell == player for cell in row):
@@ -61,7 +63,7 @@ def check_winner(board, player):
     if all(board[i][i] == player for i in range(3)) or all(board[i][2 - i] == player for i in range(3)):
         return True
     return False
-3.	Player Input Validation:
+**3.	Player Input Validation:**
 def get_player_input(board, player):
     while True:
         try:
@@ -75,17 +77,17 @@ def get_player_input(board, player):
             print("Please enter a valid number.")
   	
 ________________________________________
-Future Improvements
+# **Future Improvements**
 •	AI Opponent: Implement a computer player with strategic moves using the minimax algorithm.
 •	Graphical Interface: Build a GUI version of the game using Tkinter or PyGame.
 •	Online Multiplayer: Add networking capabilities to allow players to compete remotely.
 ________________________________________
 
-Acknowledgements
+# **Acknowledgements**
 •	Python documentation for its excellent resources.
 •	Various online tutorials and guides that provided inspiration and best practices.
 ________________________________________
 
-License
+# **License**
 This project is open-source and available under the MIT License.
 
